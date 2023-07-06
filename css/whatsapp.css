@@ -1,0 +1,32 @@
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:31px;
+  z-index:110;
+    animation: efecto 1.2s infinite;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:15px;
+}
+
+@keyframes efecto{
+	0%{
+		box-shadow: 0 0 0 0 rgba(23, 255, 2, 0.808);
+	}
+	100%{
+		box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.014);
+	}
+}

@@ -1,0 +1,267 @@
+:root {
+    --negro: #000;
+    --blanco: #fff;
+    --verdeagua: #69ffac;
+    --verdeagua1: #01e969;
+    --grisoscuro: #262626;
+    --grisclaro: #383838;
+    --grisoscuro2: #0e0c0c;
+    --morado :#2c073a;
+    --azul: #3494ee;
+    --rojo: #d80606;
+    --naranja: #f15f0b;
+    --tiktok: #000000;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Main perfil */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.3em;
+    color: #222;
+    background: #efefef;
+    font-family: sans-serif;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.span_2_of_3{
+    width: 77.2%;
+}
+
+.span_1_of_3{
+    width: 45%;
+}
+
+.section{
+    display: flex;
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.blog-post{
+    background: rgb(255, 255, 255);
+    margin: 0 auto 2em auto;
+    padding: 35px 30px;
+}
+
+.side-post{
+    background: rgb(255, 255, 255);
+    margin-left: 30px;
+    margin: 0 auto 1,5em auto;
+    width: 15em;
+    padding: 20px;
+}
+
+.blog-content{
+    font-size: 1em;
+    border-left: 5px solid #0c94e8;
+    padding-left: 15px;
+}
+
+.side-content{
+    display: flex;
+    font-size: .9em;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.blog-title{
+    font-weight: 500px;
+    font-size: 1.6em;
+    margin-top: 7px;
+}
+
+.date{
+    font-size: 1em;
+    font-weight: 400;
+    color: #9c9c9c;
+    margin-top: -10px;
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+}
+
+.post-link{
+    color: #0841a8;
+    font-style: italic;
+    transition: all 0.4s;
+}
+
+.post-link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.button{
+    display: block;
+    padding: 15px 20px;
+    margin-top: .8em;
+    background: #009acd;
+    text-align: center;
+    color: white;
+    font-size: 1.4em;
+}
+
+.button:hover{
+    background: #005c7b;
+}
+
+/* Header y nav*/
+
+.header {
+    background-color: var(--morado);
+}
+@media (min-width: 769px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    .barra {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .navegacion__enlace {
+        display: block;
+        margin-top: 2rem;
+    }
+    .header {
+        padding-bottom: 2rem;
+    }
+}
+.logo {
+    padding: 1.2rem;
+}
+.logo__contenido {
+    font-size: 5rem;
+    text-transform: luminari;
+    font-family: 'Bradley Hand';
+    color: var(--verdeagua1);
+}
+.navegacion__enlace {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-right: 2rem;
+    color: var(--blanco);
+    transition: color,font-size .3s;
+}
+.navegacion__enlace:hover {
+    color: var(--verdeagua);
+    font-size: 2.3rem;
+}
+
+/* Footer */
+
+.arriba {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--verdeagua1);
+    border-radius: 50%;
+    top: -2.5rem;
+    position: relative;
+    margin-top: auto;
+    width: 5rem;
+    height: 5rem;
+}
+.redes {
+    margin-top: 1rem;
+}
+.redes__enlace--pefil {
+    text-align: center;
+}
+.redes__enlace1 svg {
+    border-radius: 50%;
+    border: .2rem solid rgb(255, 255, 255);
+    padding: .3rem;
+    margin: 1rem;
+    transition: all .6s;
+}
+.redes__enlace2 svg {
+    border-radius: 50%;
+    border: .2rem solid rgb(255, 255, 255);
+    padding: .3rem;
+    margin: 1rem;
+    transition: all .6s;
+}
+.redes__enlace3 svg {
+    border-radius: 50%;
+    border: .2rem solid rgb(255, 255, 255);
+    padding: .3rem;
+    margin: 1rem;
+    transition: all .6s;
+}
+.redes__enlace4 svg {
+    border-radius: 50%;
+    border: .2rem solid rgb(255, 255, 255);
+    padding: .3rem;
+    margin: 1rem;
+    transition: all .6s;
+}
+.redes__enlace1 svg:hover {
+    background-color: var(--naranja);
+    width: 5rem;
+    height: 5rem;
+}
+.redes__enlace2 svg:hover {
+    background-color: var(--azul);
+    width: 5rem;
+    height: 5rem;
+}
+.redes__enlace3 svg:hover {
+    background-color: var(--tiktok);
+    width: 5rem;
+    height: 5rem;
+}
+.redes__enlace4 svg:hover {
+    background-color: var(--rojo);
+    width: 5rem;
+    height: 5rem;
+}
+.footer__contenido {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__derechos {
+    text-align: center;
+}
+
+/* Main perfil */
+
+.perfil {
+    background-image: url(../img/perfilbg.png);
+    background-size: cover;
+}
+.perfil__opacidad {
+    background-color: rgba(0, 0, 0, 0.747);
+}
+
