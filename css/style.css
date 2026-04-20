@@ -347,15 +347,16 @@ img {
     margin-bottom: 27px;
 }
 .tienda_wed>div{
-    box-shadow: 0px 0px 5px 0px rgba(68, 66, 66, 0.753);
-    background-color: #60116A;
+    box-shadow: 0px 0px 5px 0px rgb(91, 220, 255);
+    background-color: var(--azuloscuro);
     border-radius: 30px;
 }
 .tienda_wed>div:hover{
-    background-color: #7B057E;
+    background-color: #3a23a0da;
 }
 
 .informacion{
+    color: var(--blanco);
     margin:13%;
     height: 120px;
     display: flex;
@@ -398,7 +399,7 @@ img {
 }
 
 .ver-mas a:hover {
-    background-color: var(--verdeagua);
+    background-color: #79d4a2;
     color: var(--blanco);
 }
 
