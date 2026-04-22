@@ -82,7 +82,7 @@ img {
 .navegacion__enlace {
     font-size: 2rem;
     text-transform: uppercase;
-    margin-right: 2rem;
+    margin-right: 1.5rem;
     color: var(--blanco);
     transition: color,font-size .3s;
 }
