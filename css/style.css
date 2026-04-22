@@ -1,7 +1,7 @@
 :root {
     --negro: #000;
     --blanco: #fff;
-    --verdeagua: #69ffac;
+    --verdeagua: #00e1ff;
     --verdeagua1: #01e969;
     --grisoscuro: #262626;
     --grisclaro: #383838;
@@ -24,6 +24,7 @@ html {
 }
 
 /* Globales */
+
 .contenedor {
     max-width: 120rem;
     width: 90%;
@@ -42,6 +43,7 @@ img {
 }
 
 /* Header y nav*/
+
 .header {
     background-color: var(--negro);
 }
@@ -71,38 +73,47 @@ img {
 .logo {
     padding: 1.2rem;
 }
+
 .logo__contenido {
-    font-size: 5rem;
-    text-transform: luminari;
-    font-family: 'Comic Sans MS';
-    color: var(--azul);
+    display: flex;
+    align-items: center;
 }
+
+.logo__contenido img {
+    height: 100px;
+    width: auto;  
+    object-fit: contain;
+    filter: drop-shadow(0 0 5px rgba(0, 225, 255, 0.6));
+}
+
 .navegacion__enlace {
     font-size: 2rem;
     text-transform: uppercase;
-    margin-right: 1.5rem;
+    margin-right: 1rem;
     color: var(--blanco);
     transition: color,font-size .3s;
 }
 .navegacion__enlace:hover {
-    color: var(--azul);
+    color: var(--verdeagua);
     font-size: 2.3rem;
 }
 
 /* Footer */
+
 .arriba {
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color: var(--morado);
-    border-radius: 50%;
-    top: -2.5rem;
+    background-color: #187f99e0;
+    border-radius: 100%;
+    top: -4rem;
     position: relative;
-    margin-top: auto;
+    margin: 0;
     width: 5rem;
     height: 5rem;
 }
+
 .redes {
     margin-top: 1rem;
 }
@@ -195,6 +206,7 @@ img {
 }
 .perfil__titulo {
     color: var(--blanco);
+    text-shadow: 0 0 5px rgba(0, 225, 255, 0.61);
     text-transform: uppercase;
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -215,14 +227,17 @@ img {
 /* Sobre mi */
 .sobre-mi__principal-info {
     text-align: center;
+    text-shadow: 0 0 5px rgba(0, 225, 255, 0.61);
 }
 .sobre-mi__contenedor {
     background-color: var(--negro);
 }
 .sobre-mi__texto span {
     color: var(--verdeagua);
-    font-weight: bold
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(0, 217, 255, 0.5);
 }
+
 @media (min-width: 769px) {
     .sobre-mi-grid {
         display: grid;
@@ -257,6 +272,7 @@ img {
 .datos-personales strong {
     display: inline-block;
     width: 13rem;
+    text-shadow: 0 0 5px rgba(0, 225, 255, 0.61);
     color: var(--verdeagua);
     font-weight: bold;
 }
@@ -272,14 +288,17 @@ img {
 }
 .datos-personales__titulo {
     color: var(--blanco);
+    text-shadow: 0 0 5px rgba(0, 225, 255, 0.61);
     font-size: 3rem;
 }
 .intereses__titulo {
     font-size: 3rem;
     color: var(--blanco);
+    text-shadow: 0 0 5px rgba(0, 225, 255, 0.61);
 }
 .intereses span {
     color: var(--blanco);
+    text-shadow: 0 0 5px rgba(0, 225, 255, 0.61);
 }
 .intereses__contenedor {
     display: flex;
@@ -299,7 +318,7 @@ img {
     cursor: pointer;
 }
 .interes:hover {
-    background-color: var(--morado);
+    background-color: #187f99e0;
     height: 13rem;
 }
 .interes span {
@@ -321,6 +340,7 @@ img {
 body {
     background: radial-gradient(circle at center, #061225 0%, #02050a 100%);
     color: white;
+    text-shadow: 0 0 8px rgba(0, 217, 255, 0.5);
     position: relative;
     overflow-x: hidden;
 }
@@ -500,6 +520,7 @@ img {
 .portafolio h2{
     font-size: 6rem;
     color: var(--blanco);
+    text-shadow: 0 0 8px rgba(0, 217, 255, 0.5);
     margin: 3rem;
     text-align: center;
 }
@@ -583,7 +604,7 @@ img {
 }
 
 .ver-mas a:hover {
-    background-color: #1e89a3ea;
+    background-color: var(--verdeagua);
     color: var(--blanco);
 }
 
@@ -598,13 +619,16 @@ img {
     text-align: center;
     font-size: 4rem;
     color: var(--blanco);
+    text-shadow: 0 0 8px rgba(0, 217, 255, 0.5);
     margin: 0;
     padding-top: 3rem;
 }
+
 .columnas {
     display: flex;
     justify-content: center;
 }
+
 .campo input {
     border: none;
     background-color: var(--grisclaro);
@@ -615,6 +639,7 @@ img {
     font-size: 2rem;
     color: var(--blanco);
 }
+
 .campo textarea {
     border: none;
     background-color: var(--grisclaro);
@@ -625,10 +650,12 @@ img {
     padding: 2rem;
     color: var(--blanco);
 }
+
 .enviar {
     display: flex;
     justify-content: center;
 }
+
 .boton {
     background-color: transparent;
     color: var(--blanco);
@@ -642,17 +669,19 @@ img {
     justify-content: space-between;
     align-items: center;
 }
+
 .boton:hover {
     text-align: center;
-    background-color: var(--azuloscuro);
+    background-color: var(--verdeagua);
     transition: background-color 1s;
 }
+
 .boton svg {
     width: 18%;
 }
+
 @media (min-width: 768px) {
     .col1 {
         width: 50%;
     }
 }
-
