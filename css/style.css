@@ -316,6 +316,183 @@ img {
     font-weight: bold;
 }
 
+.fondo {
+    background-color: #000;
+    padding-bottom: 30px;
+    background-image: url(../img/fondo-servicio.png);
+    background-size: cover;
+}
+
+body {
+    background: radial-gradient(circle at center, #061225 0%, #02050a 100%);
+    color: white;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* SERVICIOS */
+.servicios {
+    text-align: center;
+    padding: 60px 20px;
+    text-shadow: 0 0 5px rgba(0, 225, 255, 0.61);
+}
+
+.servicios h1 {
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 0 0 10px var(--azuloscuro);
+}
+
+.servicios p {
+    text-align: center;
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+    color: #bbb;
+}
+
+.servicios span {
+    color: #00e1ff;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(10, 20, 40, 0.8);
+    border: 1px solid rgba(0, 204, 255, 0.479);
+    padding: 20px;
+    width: 260px;
+    height: 530px;
+    border-radius: 12px;
+    transition: 0.3s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Glow azul */
+.card:hover {
+    border-color: #00e1ff;
+    box-shadow: 0 0 15px #00d9ffc4, 0 0 30px rgba(0, 170, 255, 0.623);
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #00eeff;
+    text-shadow: 0 0 8px #00d9ff;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+    min-height: 40px; 
+}
+
+.card p {
+    margin: 0 0 15px 0;
+    color: var(--blanco);
+    font-size: 16px;
+    margin: 10px 0 15px 0;
+    min-height: 60px;
+}
+
+.card img {
+    height: auto;
+    width: 400px;
+    object-fit: contain;
+    margin: 5px 0;
+}
+
+.card ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 10px 0 15px 0;
+}
+
+.card li {
+    font-size: 15px;
+    position: relative;
+    padding-left: 22px;
+    margin: 8px 0;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.card li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #00d9ff;
+}
+
+.icon {
+    font-size: 40px;
+    color: #00f7ff;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #00eeff81;
+}
+
+/* POR QUE */
+.porque {
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    padding: 40px 40px;
+    border: 1px solid rgba(0, 170, 255, 0.6);
+    border-radius: 15px;
+    background: rgba(10, 20, 40, 0.6);
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.4),
+                0 0 20px rgba(0, 170, 255, 0.3);
+    overflow: hidden;
+}
+
+.porque:hover {
+    box-shadow: 0 0 15px #00d9ff,
+                0 0 30px rgba(0, 170, 255, 0.6);
+}
+
+.porque h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.beneficios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.beneficios div {
+    width: 400px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.beneficios div:hover {
+    box-shadow: 0 0 15px rgb(0, 170, 255);
+}
+
+.beneficios h4 {
+    color: #00aaff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.beneficios p {
+    font-size: 16px;
+    color: #bbb;
+}
+
 /* Portafolio */
 
 img {
