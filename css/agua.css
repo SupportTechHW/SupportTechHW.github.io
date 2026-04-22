@@ -9,7 +9,7 @@ body {
 }
 body .footer {
   z-index: 1;
-  --footer-background:#081b3f;
+  --footer-background:#09204b;
   display: grid;
   position: relative;
   grid-area: footer;
