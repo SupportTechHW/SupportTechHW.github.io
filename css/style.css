@@ -583,7 +583,7 @@ img {
 }
 
 .ver-mas a:hover {
-    background-color: var(--verdeagua);
+    background-color: #1e89a3ea;
     color: var(--blanco);
 }
 
